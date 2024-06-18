@@ -1,10 +1,9 @@
 * {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
-.contain {
-    box-sizing: border-box;
+.container {
     background: aliceblue;
     border: 1px aliceblue solid;
 }
@@ -18,7 +17,7 @@
 
 .top-item {
     background: lightgray;
-    width: calc(50% - 10px);
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -37,12 +36,13 @@
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
+    row-gap: 10px;
 }
 
 .body-item {
     background: lightgray;
-    width: calc(100% / 4 - 20px);
+    width: 23%;
 }
 
 .box {
@@ -50,18 +50,18 @@
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-between;
 }
 
 .box-item {
     background: lightgray;
-    width: calc(100% / 3 - 13px);
+    width: 30%;
     text-align: center;
     padding-top: 90px;
 }
 
 .footer {
-    margin: 5px 79px 40px 60px;
+    margin: 5px 60px 40px;
     background: lightgray;
     height: 30px;
     text-align: center;
